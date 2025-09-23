@@ -1,4 +1,4 @@
-# Ecommerce-Microservices Project
+# ecommerce-microservices Project
 
 This repository demonstrates a microservices-based architecture using **Spring Boot** and **Spring Cloud**.
 It includes multiple services, service discovery, centralized configuration, API Gateway, monitoring, and resilience patterns.
@@ -8,7 +8,7 @@ It includes multiple services, service discovery, centralized configuration, API
 ## 📌 Project Structure
 
 ```
-spring-microservices-project/
+ecommerce-microservices-project/
 ├── api-gateway/          # Central entry point for routing requests
 ├── shop-service/         # Manages shop operations
 ├── wallet-service/       # Handles wallet and payments
@@ -21,7 +21,7 @@ spring-microservices-project/
 
 ---
 ## 🏗️ Architecture
-                      +-------------------------+
+                       +-------------------------+
                       |     API Gateway         |
                       | (JWT + Routing Filter)  |
                       +-----------+-------------+
@@ -47,7 +47,6 @@ spring-microservices-project/
             |           Resilience4j Dashboard                |
             |        (http://localhost:8080/actuator)         |
             +-------------------------------------------------+
-
 
 
 ---
