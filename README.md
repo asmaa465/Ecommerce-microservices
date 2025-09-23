@@ -1,4 +1,4 @@
-# Spring Microservices Project
+# Ecommerce-Microservices Project
 
 This repository demonstrates a microservices-based architecture using **Spring Boot** and **Spring Cloud**.
 It includes multiple services, service discovery, centralized configuration, API Gateway, monitoring, and resilience patterns.
