@@ -1,104 +1,94 @@
-# 🛒 Spring Boot Microservices with API Gateway, JWT, Config Server & Admin Server
+# Spring Microservices Project
 
-This project demonstrates a **microservices-based architecture** using **Spring Boot**, **Spring Cloud Gateway**, **Eureka Service Discovery**, and **Spring Cloud Config**.
-It includes **JWT authentication**, centralized configuration, monitoring with **Spring Boot Admin**, and five core microservices: **Shop**, **Wallet**, **Inventory**, **Config Server**, and **Admin Server**.
-
----
-
-## 🚀 Features
-
-* **API Gateway** with Spring Cloud Gateway
-* **JWT Authentication** filter (for securing routes)
-* **Eureka Service Discovery** for service registration
-* **Spring Cloud Config Server** for centralized configuration
-* **Spring Boot Admin Server** for monitoring microservices
-* **Three business microservices**:
-
-  * 🛍️ **Shop Service** → Manage shops & products
-  * 💰 **Wallet Service** → Handle payments & wallet balances
-  * 📦 **Inventory Service** → Manage stock & inventory
-* Load balancing via `lb://` URIs
-* Centralized authentication with JWT
+This repository demonstrates a microservices-based architecture using **Spring Boot** and **Spring Cloud**.
+It includes multiple services, service discovery, centralized configuration, API Gateway, monitoring, and resilience patterns.
 
 ---
 
-## 🏗️ Architecture
+## 📌 Project Structure
 
 ```
-                       +---------------------+
-                       |   API Gateway       |
-                       |  (JWT Auth Filter)  |
-                       +----------+----------+
-                                  |
-       -------------------------------------------------
-       |                        |                      |
-+--------------+        +--------------+       +--------------+
-| Shop MS      |        | Wallet MS    |       | Inventory MS |
-| (Port 8081)  |        | (Port 8082)  |       | (Port 8083)  |
-+--------------+        +--------------+       +--------------+
-
-          +-------------------------------------------+
-          |        Eureka Service Discovery           |
-          |   (Registry at http://localhost:8761)     |
-          +-------------------------------------------+
-
-          +-------------------------------------------+
-          |       Spring Cloud Config Server          |
-          | (Centralized config at http://localhost)  |
-          +-------------------------------------------+
-
-          +-------------------------------------------+
-          |         Spring Boot Admin Server          |
-          | (Monitoring dashboard at http://localhost)|
-          +-------------------------------------------+
-```
-
----
-
-## ⚙️ Tech Stack
-
-* **Java 17+**
-* **Spring Boot 3.x**
-* **Spring Cloud Gateway**
-* **Spring Security (JWT)**
-* **Eureka Discovery Server**
-* **Spring Cloud Config Server**
-* **Spring Boot Admin Server**
-* **Maven**
-
----
-
-## 📂 Project Structure
-
-```
-.
-├── api-gateway/              # Spring Cloud Gateway with JWT filter
-├── shop-service/             # Shop microservice
-├── wallet-service/           # Wallet microservice
-├── inventory-service/        # Inventory microservice
-├── eureka-server/            # Eureka Discovery Server
-├── config-server/            # Centralized Config Server
-├── admin-server/             # Admin Server for monitoring
+spring-microservices-project/
+├── api-gateway/          # Central entry point for routing requests
+├── shop-service/         # Manages shop operations
+├── wallet-service/       # Handles wallet and payments
+├── inventory-service/    # Manages stock and product inventory
+├── eureka-server/        # Service discovery with Netflix Eureka
+├── config-server/        # Centralized configuration with Spring Cloud Config
+├── admin-server/         # Monitoring and management with Spring Boot Admin
 └── README.md
 ```
 
 ---
+## 🏗️ Architecture
+                      +-------------------------+
+                      |     API Gateway         |
+                      | (JWT + Routing Filter)  |
+                      +-----------+-------------+
+                                  |
+   ------------------------------------------------------------------
+   |                  |                      |                      |
++---------+      +-----------+         +-----------+          +------------+
+| Shop MS |      | Wallet MS |         | Inventory |          | Config MS  |
+| (8081)  |      | (8082)    |         | (8083)    |          | (8888)     |
++---------+      +-----------+         +-----------+          +------------+
 
-## 🔑 Authentication Flow
+            +-------------------------------------------------+
+            |           Eureka Service Discovery              |
+            |        (http://localhost:8761/eureka)           |
+            +-------------------------------------------------+
 
-* `POST /user/register` → Register a new user
-* `POST /user/login` → Authenticate & get JWT token
-* All other requests require `Authorization: Bearer <token>` header
-* Gateway adds `X-User-Email` header (from JWT) to downstream services
+            +-------------------------------------------------+
+            |           Spring Boot Admin Server              |
+            |        (http://localhost:8088/admin)            |
+            +-------------------------------------------------+
+
+            +-------------------------------------------------+
+            |           Resilience4j Dashboard                |
+            |        (http://localhost:8080/actuator)         |
+            +-------------------------------------------------+
+
+
+
+---
+
+## ⚙️ Key Features
+
+1. **Service Discovery** using **Eureka Server**
+2. **API Gateway** with **Spring Cloud Gateway**
+3. **Centralized Configuration** using **Spring Config Server**
+4. **Shop, Wallet, and Inventory Services** implemented as independent microservices
+5. **Admin Server** to monitor microservices health and status
+6. **Resilience4j Circuit Breaker** for fault tolerance
+7. **Resilience4j Dashboard** to monitor circuit breaker states
+8. **Tested Circuit Breaker** by simulating fault scenarios
 
 ---
 
 ## 📬 API Endpoints
+| Service   | Endpoint (via Gateway) | Description                   |
+| --------- | ---------------------- | ----------------------------- |
+| Shop      | `/shop/**`             | Manage orders & shopping cart |
+| Wallet    | `/wallet/**`           | Handle wallets & payments     |
+| Inventory | `/inventory/**`        | Manage stock & products       |
+| Config    | `/config/**`           | Centralized configuration     |
+| Admin     | `/admin/**`            | Service monitoring dashboard  |
 
-| Service       | Endpoint (via Gateway) | Description                  |
-| ------------- | ---------------------- | ---------------------------- |
-| Shop          | `/shop/**`             | Manage products/shops        |
-| Wallet        | `/wallet/**`           | Handle wallets/payments      |
-| Inventory     | `/inventory/**`        | Manage stock/inventory       |
-| Config Server | `/config/**`           | Centralized configuration    |
-| Admin Server  | `/admin/**`            | Service monitoring dashboard |
+---
+
+## 🚀 Technologies Used
+
+* **Java 17+**
+* **Spring Boot**
+* **Spring Cloud (Eureka, Gateway, Config Server)**
+* **Spring Boot Admin**
+* **Resilience4j**
+* **Maven**
+
+---
+
+## 📊 Monitoring & Resilience
+
+* **Spring Boot Admin** provides a UI to monitor the health of all microservices.
+* **Resilience4j Circuit Breaker** ensures fault tolerance by preventing cascading failures.
+* A **Resilience4j Dashboard** is configured to visualize circuit breaker metrics.
