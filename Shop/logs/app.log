@@ -1,0 +1,65 @@
+2025-08-28T00:41:45.387+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-4] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:42:09.019+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-9] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:43:02.355+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-3] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:43:02.356+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-3] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:43:12.057+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-7] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:43:12.058+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-7] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:45:23.452+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-4] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:45:23.453+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-4] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:46:18.629+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-9] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:46:18.630+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-9] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:46:19.785+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-10] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:46:19.786+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-10] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:46:21.016+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-6] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:46:21.016+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-6] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:48:26.628+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-9] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:48:26.629+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-9] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:48:28.677+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-6] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:48:28.677+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-6] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:49:00.114+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-3] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:49:00.114+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-3] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:49:21.813+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-5] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:49:21.813+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-5] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:49:38.261+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-8] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:49:38.261+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-8] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:54:56.054+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-8] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:54:56.054+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-8] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:57:24.191+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-8] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:57:47.631+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-6] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:58:11.482+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-3] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T00:58:11.482+03:00 DEBUG 10712 --- [Shop] [http-nio-8083-exec-3] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T01:03:32.404+03:00 DEBUG 12772 --- [Shop] [http-nio-8083-exec-1] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T01:07:47.397+03:00 DEBUG 15112 --- [Shop] [http-nio-8083-exec-1] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T11:27:59.625+03:00 ERROR 13408 --- [Shop] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
+2025-08-28T11:28:08.594+03:00 ERROR 17436 --- [Shop] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
+2025-08-28T11:44:42.630+03:00 DEBUG 9092 --- [Shop] [http-nio-8083-exec-10] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T11:45:29.312+03:00 DEBUG 9092 --- [Shop] [http-nio-8083-exec-1] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T11:45:57.486+03:00 DEBUG 9092 --- [Shop] [http-nio-8083-exec-5] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T11:46:12.438+03:00 DEBUG 9092 --- [Shop] [http-nio-8083-exec-10] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
+2025-08-28T11:46:12.439+03:00 DEBUG 9092 --- [Shop] [http-nio-8083-exec-10] feign.template.Template                  : Explicit slash decoding specified, decoding all slashes in uri
